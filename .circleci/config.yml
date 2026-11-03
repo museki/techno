@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: cimg/node:lts
     steps:
-      - run echo "Hello CircleCI (START)"
+      - run: echo "Hello CircleCI (START)"
 
 
 workflows:
