@@ -5,3 +5,9 @@ jobs:
       - image: cimg/node:lts
     steps:
       - run echo "Hello CircleCI (START)"
+
+
+workflows:
+  wf00:
+    jobs:
+      - job00
