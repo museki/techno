@@ -1,0 +1,7 @@
+version: 2.1
+jobs:
+  job00:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      run echo "Hello CircleCI (START)"
