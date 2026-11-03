@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  jobstart:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - run: echo "Hello CircleCI (START)"
+
+
+workflows:
+  wf-start:
+    jobs:
+      - jobstart
