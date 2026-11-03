@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  job00:
+  jobstart:
     docker:
       - image: cimg/node:lts
     steps:
@@ -8,6 +8,6 @@ jobs:
 
 
 workflows:
-  wf00:
+  wf-start:
     jobs:
-      - job00
+      - jobstart
