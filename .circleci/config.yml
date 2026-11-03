@@ -5,9 +5,8 @@ jobs:
       - image: cimg/node:lts
     steps:
       - run: |
-        A0="START"
-        echo "Hello CircleCI ($A0)"
-
+          A0="START"
+          echo "Hello CircleCI ($A0)"
 
 workflows:
   wf-start:
