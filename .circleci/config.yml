@@ -1,14 +1,14 @@
 version: 2.1
 jobs:
-  jobstart:
+  build:
     docker:
       - image: cimg/node:lts
     steps:
-      - run: |
-          A0="STARTUP"
-          echo "Hello CircleCI ($A0)"
+      - checkout
+      - run: yarn install
+      - run: yarn test
 
 workflows:
   wf-start:
     jobs:
-      - jobstart
+      - build
