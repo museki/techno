@@ -4,8 +4,9 @@ jobs:
     docker:
       - image: cimg/node:lts
     steps:
-      - run: echo "Hello CircleCI (START)"
-
+      - run: |
+          A0="STARTUP"
+          echo "Hello CircleCI ($A0)"
 
 workflows:
   wf-start:
